@@ -1,3 +1,6 @@
+if(process.env.NODE_ENV!=="production"){
+    require("dotenv").config();
+}
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -7,7 +10,7 @@ const cors = require('cors')
 //Inciar el server
 
 const app = express()
-const port = 3050
+
 
 //import Files
 const global = require('./Resources/global')
@@ -39,6 +42,8 @@ app.post(global.URL_Base + 'teachers/:id/tramites', tramites_controller.postNewT
 
 app.put(global.URL_Base + 'teachers/:id/tramites/:idd', tramites_controller.putTramiteById)
 
+
+const port = 3050 ||process.env.PORT;
 
 //Puerto donde se escuchará
 app.listen(port, function(){
