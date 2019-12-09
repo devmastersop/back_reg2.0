@@ -43,7 +43,7 @@ app.post(global.URL_Base + 'teachers/:id/tramites', tramites_controller.postNewT
 app.put(global.URL_Base + 'teachers/:id/tramites/:idd', tramites_controller.putTramiteById)
 
 
-app.use("port",3050 ||process.env.PORT)
+app.set("port",3050 ||process.env.PORT)
 //Puerto donde se escuchará
 app.listen(app.get("port"), function(){
     console.log('Api listen on port: ' +app.get("port"))
