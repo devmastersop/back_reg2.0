@@ -1,0 +1,36 @@
+{
+  "name": "back_reg2.0",
+  "version": "2.0.0",
+  "description": "Registro Planilla Docente",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmastersop/back_reg2.0.git"
+  },
+  "keywords": [
+    "back",
+    "node",
+    "js",
+    "restfull",
+    "API",
+    "register"
+  ],
+  "author": "DEVMASTER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devmastersop/back_reg2.0/issues"
+  },
+  "homepage": "https://github.com/devmastersop/back_reg2.0#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "log": "^6.0.0",
+    "logger": "0.0.1",
+    "nodemon": "^2.0.1",
+    "pg": "^7.14.0"
+  }
+}
