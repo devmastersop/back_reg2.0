@@ -48,3 +48,7 @@ app.put(global.URL_Base + 'teachers/:id/tramites/:idd', tramites_controller.putT
 app.listen(app.get("port"), function(){
     console.log('Api listen on port: ' +app.get("port"))
 })
+/*
+app.listen(3050, function() {
+    console.log("Example app listening on port 3006!");
+  });*/
